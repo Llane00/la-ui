@@ -2,7 +2,7 @@ import React from 'react';
 import './importicons';
 import './icon.scss';
 
-interface IconProps{
+interface IconProps {
   name: string;
   onClick: React.MouseEventHandler<SVGElement>;
 }
@@ -10,7 +10,7 @@ interface IconProps{
 const Icon: React.FunctionComponent<IconProps> = (props) => {
   return (
     <svg className="lui-icon" onClick={props.onClick}>
-      <use xlinkHref={`#${props.name}`}/>
+      <use xlinkHref={`#${props.name}`} />
     </svg>
   );
 };
