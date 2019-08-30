@@ -20,6 +20,23 @@ module.exports = {
         loader: 'awesome-typescript-loader',
       },
       {
+        test: /\.s([ac])ss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ]
+        // use: [
+        //   'style-loader',
+        //   'css-loader',
+        //   {
+        //     laoder: 'sass-loader',
+        //     options: {
+        //       includePaths: [path.resolve(__dirname, 'stylesheets', 'include')]
+        //   }
+        // }]
+      },
+      {
         test: /\.svg$/, 
         loader: 'svg-sprite-loader',
       }

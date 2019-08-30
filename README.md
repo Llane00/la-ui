@@ -16,3 +16,11 @@ yarn add @types/raect-dom --dev
 tree-shaking的基础是使用静态引入（如：import {A} from './a'）
 而当使用非静态引入时（如：importicons.js中的importAll方法）则无法再用tree-shaking技术。
 
+## 关于webpack css相关插件
+style-loader
+css-loader
+sass-loader
+
+sass-loader 使得icon.sass的内容转为icon.css
+css-loader 使得icon.css的内容转为对象
+style-loader 使得对象转为style标签，并放到body的head中
