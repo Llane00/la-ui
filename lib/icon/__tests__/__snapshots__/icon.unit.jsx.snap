@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`icon is svg element 1`] = `
+exports[`icon render successfully 1`] = `
 <svg
   className="lui-icon"
 >
