@@ -1,5 +1,5 @@
 import React from 'react';
-import './importicons';
+import './importIcons';
 import './icon.scss';
 import classes from '../helpers/classes'
 

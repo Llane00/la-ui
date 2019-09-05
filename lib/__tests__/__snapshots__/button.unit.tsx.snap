@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`button 是个div元素 1`] = `
+exports[`button button is div element 1`] = `
 <div>
   button
 </div>

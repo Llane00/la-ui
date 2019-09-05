@@ -1,8 +1,8 @@
 function add(a:number, b:number) {
   return a + b;
 }
-describe('第一个测试用例', () => {
-  it('add(1,2)等于3', () => {
+describe('the first test example', () => {
+  it('add(1,2) = 3', () => {
     expect(add(1,2)).toEqual(3);
   })
 })
