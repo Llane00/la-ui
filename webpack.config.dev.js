@@ -4,7 +4,7 @@ module.exports = Object.assign({}, base, {
   mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'hello world',
+      title: 'llane-ui',
       template: 'index.html'
     })
   ],

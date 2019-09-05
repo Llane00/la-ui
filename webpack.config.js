@@ -14,9 +14,8 @@ module.exports = {
     libraryTarget: 'umd',
   },
   module: {
-    rules: [
-      {
-        test: /\.tsx?$/, 
+    rules: [{
+        test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
       },
       {
@@ -37,14 +36,14 @@ module.exports = {
         // }]
       },
       {
-        test: /\.svg$/, 
+        test: /\.svg$/,
         loader: 'svg-sprite-loader',
       }
     ]
   },
   // plugins: [
   //   new HtmlWebpackPlugin({
-  //     title: 'hello world',
+  //     title: 'llane-ui',
   //     template: 'index.html'
   //   })
   // ],
