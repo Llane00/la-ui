@@ -1,4 +1,6 @@
 /dist/*
+junit.xml
+/test-results/
 # Logs
 logs
 *.log
