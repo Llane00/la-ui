@@ -7,7 +7,7 @@ module.exports = {
   collectCoverageFrom: ["lib/**/*.{ts,tsx}", "!**/node_modules/**"],
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov'],
-  reporters: ["default", "junit"],
+  reporters: ["default", "jest-junit"],
   // globals: {
   //   "ts-jest": {
   //     tsConfig: 'tsconfig.test.json',
