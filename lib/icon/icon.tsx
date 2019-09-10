@@ -1,6 +1,5 @@
 import React from 'react';
 import './importIcons';
-import './icons/alipay.svg';
 import './icon.scss';
 import classes from '../helpers/classes'
 
