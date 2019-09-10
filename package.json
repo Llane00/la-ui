@@ -1,9 +1,10 @@
 {
   "name": "llane_ui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "dist/lib/index.js",
+  "main": "dist/lib/index",
   "types": "dist/lib/index",
+  "files": ["/dist/**/*"],
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
     "ci": "cross-env NODE_ENV=test JEST_JUNIT_OUTPUT=./test-results/jest/results.xml jest --config=jest.config.ci.js",
