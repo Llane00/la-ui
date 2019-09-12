@@ -39,3 +39,10 @@ style-loader 使得对象转为style标签，并放到body的head中
 yarn test -u
 ```
 -u就是update，来更新测试快照文件
+
+## 关于提交版本
+./deploy.sh patch  //小版本号，修复小BUG
+
+./deploy.sh minor  //API有变化但是不影响之前的版本
+
+./deploy.sh major  //API有变化且影响之前的版本
