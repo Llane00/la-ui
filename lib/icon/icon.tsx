@@ -1,6 +1,7 @@
 import React from 'react';
 import './icon.scss';
 // import './importIcons';
+import './icons/close.svg';
 import './icons/alipay.svg';
 import './icons/cardpay.svg';
 import './icons/wechatpay.svg';
