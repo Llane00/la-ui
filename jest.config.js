@@ -5,11 +5,11 @@ module.exports = {
   clearMocks: false,
   collectCoverage: false,
   reporters: ["default"],
-  // globals: {
-  //   "ts-jest": {
-  //     tsConfig: 'tsconfig.test.json',
-  //   },
-  // },
+  globals: {
+    "ts-jest": {
+      tsConfig: 'tsconfig.test.json',
+    },
+  },
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   moduleDirectories: ['node_modules'],
   moduleNameMapper: {
