@@ -1,8 +1,21 @@
 [class^=llane-ui] {
-  font-size: 14px;
   box-sizing: border-box;
   &::before,
   &::after {
     box-sizing: border-box;
+  }
+}
+
+//btn 临时样式
+button {
+  box-sizing: border-box;
+  margin: 0 4px;
+  height: 32px;
+  border-radius: 4px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
   }
 }
