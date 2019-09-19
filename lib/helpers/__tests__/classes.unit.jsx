@@ -22,7 +22,7 @@ describe('classes', () => {
     })
 })
 
-describe('scopedClassMaker', () => { 
+describe('scopedClassMaker', () => {
   it('', ()=>{
     const sc = scopedClassMaker('llane-ui-layout');
     expect(sc('')).toEqual('llane-ui-layout');
