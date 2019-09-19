@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from '../helpers/classes';
 import { scopedClassMaker } from '../helpers/classes';
 const sc = scopedClassMaker('llane-ui-layout');
 import './layout.scss';
@@ -13,7 +12,7 @@ const Header: React.FunctionComponent<Porps> = ({
   ...restProps
 }) => {
   return (
-    <div className={classes(sc('header'), className)} {...restProps}>
+    <div className={sc('header', {extra: className})} {...restProps}>
       {children}
     </div>
   );

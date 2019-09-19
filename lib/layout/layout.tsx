@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import classes from '../helpers/classes';
 import { scopedClassMaker } from '../helpers/classes';
 const sc = scopedClassMaker('llane-ui-layout');
 import './layout.scss';
@@ -15,14 +14,13 @@ const Layout: React.FunctionComponent<Porps> = ({
   ...restProps
 }) => {
   const childrenAsArray = children as Array<ReactElement>;
-  const hasSider = ((childrenAsArray).length) &&
+  const hasSider = (length in childrenAsArray) &&
     (childrenAsArray).reduce((preResult, currentNode) => {
       return preResult || (currentNode.type === Sider);
     }, false);
 
   return (
-    <div className={classes(sc(), (hasSider ? sc('hasSider') : ''), className)} {...restProps}>
-    {/* <div className={sc({'': true, hasSider}, {extra: className})} {...restProps}></div> */}
+    <div className={sc({'': true, hasSider}, {extra: className})} {...restProps}>
       {children}
     </div>
   );
