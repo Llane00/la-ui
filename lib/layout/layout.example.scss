@@ -1,0 +1,36 @@
+.example-ct {
+  width: 60%;
+  .example1,
+  .example2,
+  .example3,
+  .example4 {
+    .llane-ui-layout {
+      color: #ffffff;
+      text-align: center;
+      &-header,
+      &-footer {
+        height: 60px;
+        line-height: 60px;
+        background: #7dbcea;
+      }
+      &-sider {
+        width: 60px;
+        height: 120px;
+        line-height: 120px;
+        background: #3ba0e9;
+      }
+      &-content {
+        height: 120px;
+        line-height: 120px;
+        background: #108ee9;
+      }
+    }
+  }
+  .example4 {
+    .llane-ui-layout-sider {
+      height: 240px;
+      line-height: 240px;
+      background: #3ba0e9;
+    }
+  }
+}
