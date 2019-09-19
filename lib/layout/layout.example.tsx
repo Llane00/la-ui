@@ -8,18 +8,18 @@ import './layout.example.scss'
 
 export default function () {
   return (
-    <div className='example-ct'>
-      <div className='example1'>
+    <div className='layout-example-ct'>
+      <div className='layout-example1'>
         <h1>例子1</h1>
-        <Layout className='hi'>
+        <Layout className='hello-world'>
           <Header>header</Header>
           <Content>content</Content>
           <Footer>footer</Footer>
         </Layout>
       </div>
-      <div className='example2'>
+      <div className='layout-example2'>
         <h1>例子2</h1>
-        <Layout className='hi'>
+        <Layout className='hello-world'>
           <Header>header</Header>
           <Layout>
             <Sider>sider</Sider>
@@ -28,9 +28,9 @@ export default function () {
           <Footer>footer</Footer>
         </Layout>
       </div>
-      <div className='example3'>
+      <div className='layout-example3'>
         <h1>例子3</h1>
-        <Layout className='hi'>
+        <Layout className='hello-world'>
           <Header>header</Header>
           <Layout>
             <Content>content</Content>
@@ -39,9 +39,9 @@ export default function () {
           <Footer>footer</Footer>
         </Layout>
       </div>
-      <div className='example4'>
+      <div className='layout-example4'>
         <h1>例子4</h1>
-        <Layout className='hi'>
+        <Layout className='hello-world'>
           <Sider>sider</Sider>
           <Layout>
             <Header>header</Header>
