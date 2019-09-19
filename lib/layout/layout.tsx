@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import classes from '../helpers/classes';
-import { scopedClassMaker } from '../classes';
+import { scopedClassMaker } from '../helpers/classes';
 const sc = scopedClassMaker('llane-ui-layout');
 import './layout.scss';
 import Sider from './sider';
@@ -21,7 +21,8 @@ const Layout: React.FunctionComponent<Porps> = ({
     }, false);
 
   return (
-    <div className={classes(sc(), className, (hasSider ? 'hasSider' : ''))} {...restProps}>
+    <div className={classes(sc(), (hasSider ? sc('hasSider') : ''), className)} {...restProps}>
+    {/* <div className={sc({'': true, hasSider}, {extra: className})} {...restProps}></div> */}
       {children}
     </div>
   );

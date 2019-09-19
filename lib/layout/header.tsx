@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from '../helpers/classes';
-import { scopedClassMaker } from '../classes';
+import { scopedClassMaker } from '../helpers/classes';
 const sc = scopedClassMaker('llane-ui-layout');
 import './layout.scss';
 
