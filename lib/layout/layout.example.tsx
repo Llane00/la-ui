@@ -8,7 +8,7 @@ import Footer from './footer';
 export default function () {
   return (
     <div>
-      {/* <div>
+      <div>
         <h1>例子1</h1>
         <Layout style={{ height: 600 }} className='hi'>
           <Header>header</Header>
@@ -37,7 +37,7 @@ export default function () {
           </Layout>
           <Footer>footer</Footer>
         </Layout>
-      </div> */}
+      </div>
       <div>
         <h1>例子4</h1>
         <Layout style={{ height: 600 }} className='hi'>
