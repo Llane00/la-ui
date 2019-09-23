@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route, NavLink } from 'react-router-dom';
-import IconExample from '../lib/icon/icon.example';
+import IconDemo from '../lib/icon/icon.demo';
 import ButtonExample from '../lib/button/button.example';
 import DialogExample from '../lib/dialog/dialog.example';
 import LayoutExample from '../lib/layout/layout.example';
 import {Layout, Header, Sider, Content, Footer} from '../lib/layout/layout';
 import './example.scss';
 import * as logo from './logo.png';
-
-const x = require('!!raw-loader!../lib/icon/icon.example.tsx');
-console.log(x.default);
 
 ReactDOM.render((
   <Router>
@@ -40,7 +37,7 @@ ReactDOM.render((
           </ul>
         </Sider>
         <Content className="llane-site-main">
-          <Route path="/icon" component={IconExample}></Route>
+          <Route path="/icon" component={IconDemo}></Route>
           <Route path="/button" component={ButtonExample}></Route>
           <Route path="/dialog" component={DialogExample}></Route>
           <Route path="/layout" component={LayoutExample}></Route>
