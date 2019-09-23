@@ -13,7 +13,7 @@ module.exports = Object.assign({}, base, {
     new HtmlWebpackPlugin({
       title: 'llane-ui',
       template: './example/example.html',
-      filename: 'example.html'
+      filename: 'index.html'
     })
   ],
 })

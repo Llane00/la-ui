@@ -5,4 +5,4 @@ mv -f doc/* ./
 git add .
 git commit -m 'update site-pages'
 git push
-git checkout master
+git checkout -
