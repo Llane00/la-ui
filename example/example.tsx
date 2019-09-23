@@ -6,8 +6,8 @@ import ButtonExample from '../lib/button/button.example';
 import DialogExample from '../lib/dialog/dialog.example';
 import LayoutExample from '../lib/layout/layout.example';
 import {Layout, Header, Sider, Content, Footer} from '../lib/layout/layout';
-import './index.scss';
-const logo = require('./logo.png');
+import './example.scss';
+import * as logo from './logo.png';
 
 const x = require('!!raw-loader!../lib/icon/icon.example.tsx');
 console.log(x.default);

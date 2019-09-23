@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none
+}
+
+*::before {
+  box-sizing: border-box
+}
+
+*::after {
+  box-sizing: border-box
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+$main-color: #ec407a;
+
+.llane-site-pages {
+  background: #ffffff;
+}
+
+.llane-site-header {
+  border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
+
+  .logo {
+    display: flex;
+    align-items: flex-end;
+
+    >span {
+      margin: 0 0 12px 20px;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: $main-color;
+    }
+  }
+}
+
+.llane-site-sider {
+  padding: 6px 0;
+  border-right: 1px solid #eeeeee;
+  h2 {
+    padding: 6px;
+  }
+  ul {
+    >li {
+      padding-bottom: .6em;
+      a {
+        display: inline-block;
+        width: 100%;
+        padding: 6px;
+        color: #666666;
+        &:hover {
+          color: $main-color;
+        }
+        &.active {
+          color: #ffffff;
+          background: $main-color;
+        }
+      }
+    }
+  }
+}
+
+.llane-site-main {
+  margin: 10px 20px;
+}
+
+.llane-site-footer {
+  padding: 1em 0 1em;
+  text-align: center;
+  border-top: 1px solid #eeeeee;
+}
+
+//btn 临时样式
+button {
+  box-sizing: border-box;
+  margin: 0 4px;
+  height: 32px;
+  border-radius: 4px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
