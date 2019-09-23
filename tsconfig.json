@@ -22,18 +22,18 @@
     "esModuleInterop": true,
     "noUnusedLocals": true
   },
-  "include": [
-    "lib/**/*"
-  ],
   "exclude": [
     "node_modules",
     "build",
     "dist",
-    "scripts",
-    "acceptance-tests",
+    "public",
     "webpack",
     "jest",
-    "src/setupTests.ts",
-    "*.js"
+    "*.js",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "scripts",
+    "acceptance-tests",
+    "src/setupTests.ts"
   ]
 }
