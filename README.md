@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/llane_ui_test.svg)](https://badge.fury.io/js/llane_ui_test)
 
-[![CircleCI](https://circleci.com/gh/Llane00/webpack-build.svg?style=svg)](https://circleci.com/gh/Llane00/webpack-build)
+[![CircleCI](https://circleci.com/gh/Llane00/la-ui.svg?style=svg)](https://circleci.com/gh/Llane00/la-ui)
 
 ## 关于安装
 ts项目下安装react相关内容

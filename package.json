@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Llane00/webpack-build.git"
+    "url": "git+https://github.com/Llane00/la-ui.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Llane00/webpack-build/issues"
+    "url": "https://github.com/Llane00/la-ui/issues"
   },
-  "homepage": "https://github.com/Llane00/webpack-build#readme",
+  "homepage": "https://github.com/Llane00/la-ui#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
