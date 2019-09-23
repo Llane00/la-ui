@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Dialog, { alert, confirm, modal } from './dialog';
+import './dialog.example.scss';
 
 export default function () {
   const [x, setX] = useState(false); //for 例子1
@@ -14,7 +15,7 @@ export default function () {
   }
   return (
     <div>
-      <div>
+      <div className="dialog-example-ct">
         <h1>例子1 使用Dialog原始组件</h1>
         <button onClick={() => setX(!x)}>click</button>
         <Dialog
@@ -30,7 +31,7 @@ export default function () {
           <div>dialog</div>
         </Dialog>
       </div>
-      <div>
+      <div className="dialog-example-ct">
         <h1>例子2 使用Dialog原始组件（无默认遮罩层）</h1>
         <button onClick={() => setY(!y)}>click</button>
         <Dialog 
@@ -48,7 +49,7 @@ export default function () {
           <div>dialog</div>
         </Dialog>
       </div>
-      <div>
+      <div className="dialog-example-ct">
         <h1>例子3 分别调用Dialog的动态组件alert，confirm，modal</h1>
         <button onClick={() => alert('1')}>alert</button>
         <button onClick={() => confirm('1', () => {
@@ -58,7 +59,7 @@ export default function () {
         })}>confirm</button>
         <button onClick={() => modal(<h1>你好</h1>)}>modal</button>
       </div>
-      <div>
+      <div className="dialog-example-ct">
         <h1>例子4 在Dialog动态组件modal中调用Dialog API</h1>
         <button onClick={openModal}>modal</button>
       </div>
