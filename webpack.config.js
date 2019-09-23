@@ -1,7 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-  // mode: 'production',
   entry: {
     index: './example/example.tsx'
   },
@@ -25,15 +23,6 @@ module.exports = {
           'css-loader',
           'sass-loader',
         ]
-        // use: [
-        //   'style-loader',
-        //   'css-loader',
-        //   {
-        //     laoder: 'sass-loader',
-        //     options: {
-        //       includePaths: [path.resolve(__dirname, 'stylesheets', 'include')]
-        //   }
-        // }]
       },
       {
         test: /\.svg$/,
@@ -47,24 +36,4 @@ module.exports = {
       }
     ]
   },
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     title: 'llane-ui',
-  //     template: 'index.html'
-  //   })
-  // ],
-  // externals: {
-  //   react: {
-  //     commonjs: 'react',
-  //     commonjs2: 'react',
-  //     amd: 'react',
-  //     root: 'React',
-  //   },
-  //   'react-dom': {
-  //     commonjs: 'react-dom',
-  //     commonjs2: 'react-dom',
-  //     amd: 'react-dom',
-  //     root: 'ReactDom',
-  //   }
-  // }
 }
