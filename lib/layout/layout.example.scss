@@ -1,5 +1,14 @@
 .layout-example-ct {
   width: 60%;
+
+  >div {
+    margin-bottom: 20px;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+
   .layout-example1,
   .layout-example2,
   .layout-example3,
@@ -7,18 +16,21 @@
     .llane-ui-layout {
       color: #ffffff;
       text-align: center;
+
       &-header,
       &-footer {
         height: 60px;
         line-height: 60px;
         background: #7dbcea;
       }
+
       &-sider {
         width: 60px;
         height: 120px;
         line-height: 120px;
         background: #3ba0e9;
       }
+
       &-content {
         height: 120px;
         line-height: 120px;
@@ -26,6 +38,7 @@
       }
     }
   }
+
   .layout-example4 {
     .llane-ui-layout-sider {
       height: 240px;
