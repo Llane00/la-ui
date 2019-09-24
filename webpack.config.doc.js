@@ -1,6 +1,7 @@
 const path = require('path');
 const base = require('./webpack.config');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = Object.assign({}, base, {
   mode: 'production',
   output: {
@@ -14,6 +15,7 @@ module.exports = Object.assign({}, base, {
       title: 'llane-ui',
       template: './example/example.html',
       filename: 'index.html'
-    })
+    }),
+    new CleanWebpackPlugin() //output.path
   ],
 })
