@@ -4,7 +4,7 @@ import Button from '../button'
 
 describe('button', () => {
     it('button is div element', ()=>{
-      const json = renderer.create(<Button/>).toJSON()
+      const json = renderer.create(<Button btnType='default'>测试</Button>).toJSON()
       expect(json).toMatchSnapshot()
     })
 })

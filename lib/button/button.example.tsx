@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Button from './button';
 
-const ButtonExample:React.FunctionComponent = () => {
+const ButtonExample: React.FunctionComponent = () => {
   return (
-    <div>button</div>
+    <Fragment>
+      <Button btnType='default' onClick={()=>{console.log('点击默认按钮')}}>默认按钮</Button>
+      <Button btnType='primary'>primary</Button>
+    </Fragment>
   );
 };
 
