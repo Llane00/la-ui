@@ -13,7 +13,7 @@ describe('classes', () => {
       expect(result).toEqual('a')
     })
     it('reveive one classname param, one undefined param, one chinese string, one false param and one null param', ()=>{
-      const result = classes('a', undefined, '测试', false, null)
+      const result = classes('a', undefined, '测试', null)
       expect(result).toEqual('a 测试')
     })
     it('reveive none param', ()=>{
