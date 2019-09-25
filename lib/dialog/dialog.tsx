@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './dialog.scss';
 import Icon from '../icon/icon';
 import { scopedClassMaker } from '../helpers/classes';
+import Button from '../button/button';
 
 interface Props {
   visible: boolean;
@@ -77,7 +78,7 @@ const modal = (content: any, buttons?: Array<ReactElement>, afterClose?: () => v
   return onClose;
 };
 const alert = (content: string) => {
-  const button = <button onClick={() => close()}>OK</button>;
+  const button = <Button btnType="primary" onClick={() => close()}>OK</Button>;
   const close = modal(content, [button]);
 };
 const confirm = (content: string, yes?: () => void, no?: () => void) => {
@@ -90,8 +91,8 @@ const confirm = (content: string, yes?: () => void, no?: () => void) => {
     no && no();
   };
   const buttons = [
-    <button onClick={onYes}>yes</button>,
-    <button onClick={onNo}>no</button>
+    <Button btnType="primary" onClick={onYes}>yes</Button>,
+    <Button btnType="primary" onClick={onNo}>no</Button>
   ];
   const onClose = modal(content, buttons, no);
 };

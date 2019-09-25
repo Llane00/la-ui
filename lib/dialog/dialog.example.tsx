@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Dialog, { alert, confirm, modal } from './dialog';
 import './dialog.example.scss';
+import Button from '../button/button';
 
 export default function () {
   const [x, setX] = useState(false); //for 例子1
@@ -9,7 +10,7 @@ export default function () {
     const close = modal(
       <h1>
         你好
-        <button onClick={() => close()}>close</button>
+        <Button btnType='primary' onClick={() => close()}>close</Button> 
       </h1>
     );
   }
@@ -17,13 +18,13 @@ export default function () {
     <div>
       <div className="dialog-example-ct">
         <h1>例子1 使用Dialog原始组件</h1>
-        <button onClick={() => setX(!x)}>click</button>
+        <Button btnType='primary' onClick={() => setX(!x)}>click</Button> 
         <Dialog
           visible={x}
           buttons={
             [
-              <button onClick={() => { setX(!x) }}>1</button>,
-              <button onClick={() => { setX(!x) }}>2</button>
+              <Button btnType='primary' onClick={() => { setX(!x) }}>1</Button> ,
+              <Button btnType='primary' onClick={() => { setX(!x) }}>2</Button> 
             ]
           }
           onClose={() => { setX(!x) }}
@@ -33,14 +34,14 @@ export default function () {
       </div>
       <div className="dialog-example-ct">
         <h1>例子2 使用Dialog原始组件（无默认遮罩层）</h1>
-        <button onClick={() => setY(!y)}>click</button>
+        <Button btnType='primary' onClick={() => setY(!y)}>click</Button> 
         <Dialog 
           visible={y} 
           closeOnClickMask={true} 
           buttons={
             [
-              <button onClick={() => { setY(!y) }}>1</button>,
-              <button onClick={() => { setY(!y) }}>2</button>
+              <Button btnType='primary' onClick={() => { setY(!y) }}>1</Button> ,
+              <Button btnType='primary' onClick={() => { setY(!y) }}>2</Button> 
             ]
           }
           onClose={() => { setY(!y) }}
@@ -51,17 +52,17 @@ export default function () {
       </div>
       <div className="dialog-example-ct">
         <h1>例子3 分别调用Dialog的动态组件alert，confirm，modal</h1>
-        <button onClick={() => alert('1')}>alert</button>
-        <button onClick={() => confirm('1', () => {
+        <Button btnType='primary' onClick={() => alert('1')}>alert</Button> 
+        <Button btnType='primary' onClick={() => confirm('1', () => {
           console.log('yes');
         }, () => {
           console.log('no');
-        })}>confirm</button>
-        <button onClick={() => modal(<h1>你好</h1>)}>modal</button>
+        })}>confirm</Button> 
+        <Button btnType='primary' onClick={() => modal(<h1>你好</h1>)}>modal</Button> 
       </div>
       <div className="dialog-example-ct">
         <h1>例子4 在Dialog动态组件modal中调用Dialog API</h1>
-        <button onClick={openModal}>modal</button>
+        <Button btnType='primary' onClick={openModal}>modal</Button> 
       </div>
     </div>
   )
