@@ -1,6 +1,6 @@
 @import '../helper';
 
-.llane-ui-layout {
+.la-ui-layout {
   display: flex;
   flex-direction: column;
   &-content {
@@ -12,7 +12,7 @@
   }
   &-hasSider {
     flex-direction: row;
-    .llane-ui-layout {
+    .la-ui-layout {
       flex-direction: column;
     }
   }

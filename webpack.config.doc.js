@@ -12,7 +12,7 @@ module.exports = Object.assign({}, base, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'llane-ui',
+      title: 'la-ui',
       template: './example/example.html',
       filename: 'index.html'
     }),

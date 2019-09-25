@@ -1,6 +1,6 @@
 import React from 'react';
 import { scopedClassMaker } from '../helpers/classes';
-const sc = scopedClassMaker('llane-ui-layout');
+const sc = scopedClassMaker('la-ui-layout');
 import './layout.scss';
 
 interface Porps extends React.HTMLAttributes<HTMLElement> {

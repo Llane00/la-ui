@@ -11,15 +11,15 @@ import * as logo from './logo.png';
 
 ReactDOM.render((
   <Router>
-    <Layout className="llane-site-pages">
-      <Header className="llane-site-header">
+    <Layout className="la-site-pages">
+      <Header className="la-site-header">
         <div className="logo">
           <img src={logo} alt=""/>
-          <span>Llane-ui</span>
+          <span>la-ui</span>
         </div>
       </Header>
       <Layout>
-        <Sider className="llane-site-sider">
+        <Sider className="la-site-sider">
           <h2>组件</h2>
           <ul>
             <li>
@@ -36,14 +36,14 @@ ReactDOM.render((
             </li>
           </ul>
         </Sider>
-        <Content className="llane-site-main">
+        <Content className="la-site-main">
           <Route path="/icon" component={IconDemo}></Route>
           <Route path="/button" component={ButtonExample}></Route>
           <Route path="/dialog" component={DialogExample}></Route>
           <Route path="/layout" component={LayoutExample}></Route>
         </Content>
       </Layout>
-      <Footer className="llane-site-footer">copyright&copy;2019 by llane</Footer>
+      <Footer className="la-site-footer">copyright&copy;2019 by la</Footer>
     </Layout>
   </Router>
 ), document.querySelector('#root'));

@@ -24,11 +24,11 @@ describe('classes', () => {
 
 describe('scopedClassMaker', () => {
   it('', ()=>{
-    const sc = scopedClassMaker('llane-ui-layout');
-    expect(sc('')).toEqual('llane-ui-layout');
-    expect(sc('x')).toEqual('llane-ui-layout-x');
-    expect(sc({y: true, z: false})).toEqual('llane-ui-layout-y');
-    expect(sc({y: true, z: true})).toEqual('llane-ui-layout-y llane-ui-layout-z');
-    expect(sc({y: true, z: true}, {extra: 'red'})).toEqual('llane-ui-layout-y llane-ui-layout-z red');
+    const sc = scopedClassMaker('la-ui-layout');
+    expect(sc('')).toEqual('la-ui-layout');
+    expect(sc('x')).toEqual('la-ui-layout-x');
+    expect(sc({y: true, z: false})).toEqual('la-ui-layout-y');
+    expect(sc({y: true, z: true})).toEqual('la-ui-layout-y la-ui-layout-z');
+    expect(sc({y: true, z: true}, {extra: 'red'})).toEqual('la-ui-layout-y la-ui-layout-z red');
   })
 })

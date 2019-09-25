@@ -12,7 +12,7 @@ interface Props {
   enableMask?: boolean;
 }
 
-const scopedClass = scopedClassMaker('llane-ui-dialog');
+const scopedClass = scopedClassMaker('la-ui-dialog');
 const sc = scopedClass;
 
 const Dialog: React.FunctionComponent<Props> = (props) => {

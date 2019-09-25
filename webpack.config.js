@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/lib'),
-    library: 'llane_ui',
+    library: 'la_ui',
     libraryTarget: 'umd',
   },
   module: {

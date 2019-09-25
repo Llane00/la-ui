@@ -1,4 +1,4 @@
-# llane_ui
+# la_ui
 
 [![npm version](https://badge.fury.io/js/llane_ui_test.svg)](https://badge.fury.io/js/llane_ui_test)
 
