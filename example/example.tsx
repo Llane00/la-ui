@@ -14,7 +14,9 @@ ReactDOM.render((
     <Layout className="la-site-pages">
       <Header className="la-site-header">
         <div className="logo">
-          <img src={logo} alt=""/>
+          <div className="logo-img">
+            <img src={logo} alt=""/>
+          </div>
           <span>la-ui</span>
         </div>
       </Header>
@@ -43,7 +45,7 @@ ReactDOM.render((
           <Route path="/layout" component={LayoutExample}></Route>
         </Content>
       </Layout>
-      <Footer className="la-site-footer">copyright&copy;2019 by la</Footer>
+      <Footer className="la-site-footer">copyright&copy;2019 by Llane00</Footer>
     </Layout>
   </Router>
 ), document.querySelector('#root'));

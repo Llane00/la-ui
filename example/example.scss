@@ -1,3 +1,5 @@
+@import '../lib/helper';
+
 * {
   margin: 0;
   padding: 0;
@@ -42,8 +44,6 @@ pre {
   font-family: Consolas, monospace, serif;
 }
 
-$main-color: #ec407a;
-
 .la-site-pages {
   min-height: 100vh;
   background: #ffffff;
@@ -57,6 +57,14 @@ $main-color: #ec407a;
     display: flex;
     align-items: flex-end;
 
+    .logo-img {
+      background-color: $main-color;
+
+      >img {
+        max-width: 100%;
+      }
+    }
+
     >span {
       margin: 0 0 12px 20px;
       font-size: 1.4em;
@@ -69,20 +77,25 @@ $main-color: #ec407a;
 .la-site-sider {
   padding: 6px 0;
   border-right: 1px solid #eeeeee;
+
   h2 {
     padding: 6px;
   }
+
   ul {
     >li {
       padding-bottom: .6em;
+
       a {
         display: inline-block;
         width: 100%;
         padding: 6px;
         color: #666666;
+
         &:hover {
           color: $main-color;
         }
+
         &.active {
           color: #ffffff;
           background: $main-color;
