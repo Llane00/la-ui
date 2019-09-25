@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`button button is div element 1`] = `
-<div>
-  button
-</div>
+exports[`button button组件测试 1`] = `
+<button
+  className="la-ui-button"
+>
+  测试
+</button>
 `;
