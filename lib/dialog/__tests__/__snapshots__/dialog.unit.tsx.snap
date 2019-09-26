@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dialog dialog alert组件快照测试 1`] = `
+<button
+  className="la-ui-button la-ui-button-primary"
+  onClick={[Function]}
+>
+  alert
+</button>
+`;
+
+exports[`dialog dialog confirm组件快照测试 1`] = `
+<button
+  className="la-ui-button la-ui-button-primary"
+  onClick={[Function]}
+>
+  confirm
+</button>
+`;
+
+exports[`dialog dialog modal组件快照测试 1`] = `
+<button
+  className="la-ui-button la-ui-button-primary"
+  onClick={[Function]}
+>
+  modal
+</button>
+`;

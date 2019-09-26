@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layout layout组件快照测试 1`] = `
+<div
+  className="la-ui-layout"
+>
+  <div
+    className="la-ui-layout-header"
+  >
+    header
+  </div>
+  <div
+    className="la-ui-layout la-ui-layout-hasSider"
+  >
+    <div
+      className="la-ui-layout-sider"
+    >
+      sider
+    </div>
+    <div
+      className="la-ui-layout-content"
+    >
+      content
+    </div>
+  </div>
+  <div
+    className="la-ui-layout-footer"
+  >
+    footer
+  </div>
+</div>
+`;
