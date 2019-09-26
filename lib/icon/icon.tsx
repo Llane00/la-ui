@@ -1,10 +1,6 @@
 import React from 'react';
 import './icon.scss';
-// import './importIcons';
-import './icons/close.svg';
-import './icons/alipay.svg';
-import './icons/cardpay.svg';
-import './icons/wechatpay.svg';
+import './importIcons';
 import classes from '../helpers/classes';
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
