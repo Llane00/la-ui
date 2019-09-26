@@ -46,11 +46,12 @@ pre {
 
 .la-site-pages {
   min-height: 100vh;
-  background: #ffffff;
+  background: #9dc7f3;
 }
 
 .la-site-header {
-  border-bottom: 1px solid #eeeeee;
+  padding-left: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
   background: #ffffff;
 
   .logo {
@@ -75,16 +76,19 @@ pre {
 }
 
 .la-site-sider {
+  margin: 8px;
   padding: 6px 0;
-  border-right: 1px solid #eeeeee;
+  background: #ffffff;
+  border-radius: 4px;
 
   h2 {
     padding: 6px;
+    border-bottom: 1px solid #e5e9ef;
   }
 
   ul {
     >li {
-      padding-bottom: .6em;
+      margin-bottom: .6em;
 
       a {
         display: inline-block;
@@ -106,13 +110,19 @@ pre {
 }
 
 .la-site-main {
-  margin: 10px 20px;
+  margin: 8px 8px 8px 0;
+  padding: 1em;
+  background: #ffffff;
+  border-radius: 4px;
 }
 
 .la-site-footer {
-  padding: 1em 0 1em;
+  margin-top: .4em;
+  padding: 1.8em 0 1.8em;
+  font-size: .8em;
+  color: #99a2aa;
   text-align: center;
-  border-top: 1px solid #eeeeee;
+  background-color: #f6f9fa;
 }
 
 //btn 临时样式
