@@ -17,7 +17,7 @@ const Button: React.FunctionComponent<ButtonProps> =
     ...restProps
   }) => {
     const isDefaultType = (!btnType || btnType === '' || btnType === 'default');
-    const btnClassType = btnType ? btnType : ' ';
+    const btnClassType = btnType ? btnType : '';
     return (
       <button className={sc({ '': true, [btnClassType]: !isDefaultType }, { extra: className })} {...restProps}>
         {children}
